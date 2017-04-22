@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.hncu.Dao.PhotoInfoEntity" table="photo_info" schema="photo">
+        <id name="id" column="id"/>
+        <property name="dir" column="dir"/>
+        <property name="ext" column="ext"/>
+        <property name="relName" column="relName"/>
+        <property name="ip" column="ip"/>
+        <property name="dt" column="dt"/>
+        <property name="info" column="info"/>
+    </class>
+</hibernate-mapping>

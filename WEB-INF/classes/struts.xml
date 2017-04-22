@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="struts2" namespace="/" extends="struts-default">
+        <action name="UploadPic" class="cn.hncu.Action.UploadAction" method="ajaxGetImage">
+            <result name="successful">index.jsp</result>
+            <result name="failed">contact.jsp</result>
+        </action>
+
+        <action name="DeletePic" class="cn.hncu.Action.DeleteAction" method="DeleteImage">
+            <result name="successful">index.jsp</result>
+            <result name="failed">item_preview.jsp</result>
+        </action>
+
+        <action name="CheckLogin" class="cn.hncu.Action.CheckLoginAction" method="check">
+            <result name="successful">index.jsp</result>
+            <result name="failed">AdminLogin.jsp</result>
+        </action>
+    </package>
+</struts>
